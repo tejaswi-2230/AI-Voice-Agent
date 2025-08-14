@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+requests
+python-dotenv
+flask
+pydantic
+python-multipart==0.0.6
+python-multipart 
+assemblyai 
+ffmpeg-python
+jinja2
+aiofiles

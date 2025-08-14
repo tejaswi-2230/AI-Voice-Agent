@@ -1,0 +1,91 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voice Agent Assistant — Conversational</title>
+  <link rel="stylesheet" href="/static/stylee.css" />
+</head>
+<body>
+  <div class="app-container">
+    <div class="glass-card">
+      <h1 class="app-title">Voice Agent Assistant — Conversational😎🤳🏻</h1>
+
+      <textarea id="textInput" placeholder="Enter your text here..." rows="2"></textarea>
+      <select id="voiceSelect">
+        <option value="en-US-natalie">Natalie (US)</option>
+        <option value="en-UK-freddie">Freddie (English - UK, Male)</option>
+        <option value="en-UK-heidi">Heidi (English - UK, Female)</option>
+        <option value="en-US-ken">Ken (English - US, Male)</option>
+      </select>
+      <button id="generateBtn">Generate &amp; Play</button>
+      <audio id="audioPlayer" controls style="display:none;"></audio>
+
+      <h1 class="app-title" style="margin-top: 40px;">Echo Bot 🔊</h1>
+      <p>Record your voice and play it back.</p>
+      <div class="echo-container">
+        <button id="startBtn">Start Recording</button>
+        <button id="stopBtn" disabled>Stop Recording</button>
+        <p id="timer" style="color:#f5d521; margin-top:5px; display:none;">Recording Time: 0s</p>
+        <audio id="echoAudio" controls style="display:none;"></audio>
+        <button id="downloadBtn" style="display:none;">Download Recording</button>
+        <button id="discardBtn" style="display:none; background-color:#8b0000; color:#fff; 
+        border:none; border-radius:6px; padding:10px 20px; cursor:pointer;">Discard Recording</button>
+        <p id="uploadStatus" style="margin:8px 0 0 0; display:none; color:#29e6a7; font-weight:bold;"></p>
+      </div>
+      <button id="transcribeBtn" style="margin-top:20px;" disabled>Transcribe Recording</button>
+      <p id="transcriptDisplay" style="white-space: pre-wrap; margin-top:20px;"></p>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>  
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voice AI Agent</title>
+  <link rel="stylesheet" href="/static/stylee.css" />
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- LEFT PANEL: Voice Agent TTS -->
+    <div class="glass-card tts-card">
+      <h1 class="app-title">Voice Agent Assistant 🎤✨</h1>
+      <div class="tts-wrapper">
+        <textarea id="textInput" placeholder="Type your text here..." rows="3"></textarea>
+        <select id="voiceSelect">
+          <option value="en-US-natalie">Natalie (US)</option>
+          <option value="en-UK-freddie">Freddie (UK)</option>
+          <option value="en-UK-heidi">Heidi (UK)</option>
+          <option value="en-US-ken">Ken (US)</option>
+        </select>
+        <button id="generateBtn" class="btn-generate">Generate & Play</button>
+        <audio id="audioPlayer" controls style="display:none;"></audio>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL: Conversational LLM + Voice -->
+    <div class="glass-card echo-card">
+      <h1 class="app-title">Conversational Voice Bot 🤖💬</h1>
+      <div class="echo-wrapper">
+        <p>Talk to your AI assistant. Click the button and speak!</p>
+        <button id="recordBtn" class="btn-record">Start Recording</button>
+        <p id="timer" class="timer">Recording Time: 0s</p>
+        <p id="transcriptDisplay" class="transcript"></p>
+        <p id="uploadStatus" class="upload-status"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
