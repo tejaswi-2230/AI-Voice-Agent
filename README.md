@@ -126,13 +126,20 @@ Complete voice pipeline:
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### Voice Agent Assistant (TTS)  
-![TTS UI](docs/screenshots/tts_ui.png)
+### Voice Generator UI
+![Voice Generator](images/voice_generator.png)
 
-### Conversational Voice Bot  
-![Voice Bot UI](docs/screenshots/voice_bot_ui.png)
+### Voice Agent LLM
+![Voice Agent LLM](images/voice_agent_llm.png)
+
+### FastAPI Backend
+![FastAPI Backend](images/fastapi.png)
+
+### TTS Recording
+![TTS Recording](images/tts_recording.png)
+
 
 ---
 
